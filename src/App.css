@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,80 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8D8D8D;
+}
+.container{
+  border: 5px solid #FFA500;
+  display: flex;
+  width: 50em;
+  height: 20em;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #B3B3B3;
+}
+
+.container-left{
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  gap: 5em;
+  grid-template-rows: repeat(3, 20px);
+}
+
+.container-right{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.drum-pad{
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 5em;
+  align-self: center;
+  line-height: 5em;
+  height: 5em;
+  cursor: pointer;
+  background-color: #808080;
+  text-transform: capitalize;
+}
+
+
+.power, .mode{
+  cursor: pointer;
+}
+
+.select{
+  width: 100px;
+  height: 20px;
+  background-color: black;
+}
+
+.inner{
+  width: 50px;
+  height: 20px;
+  background-color: blue;
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+@media screen and (max-width: 500px){
+  body{
+    overflow-x: hidden;
+    overflow-x: hidden;
+  }
+  .container{
+    transform: rotate(90deg);
+    /* width: 100vw;   */
+    height: 50vh;
   }
 }
