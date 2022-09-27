@@ -111,3 +111,14 @@ body{
     height: 50vh;
   }
 }
+
+@media screen and (max-height:900px) {
+  body{
+    overflow-x: hidden;
+    overflow-x: hidden;
+  }
+  .container{
+    height: 50vh;
+    width: 150vw;
+  }
+}
